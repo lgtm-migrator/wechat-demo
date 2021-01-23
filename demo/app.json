@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/article/article"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#C22A1E"
+  },
+  "usingComponents": {
+    "l-icon": "/miniprogram_npm/lin-ui/icon/index"
+  },
+  "sitemapLocation": "sitemap75.json"
+}
