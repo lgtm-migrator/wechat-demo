@@ -1,40 +1,47 @@
 /* pages/article/article.wxss */
-.container{
+.container {
   display: flex;
   flex-direction: column;
 }
-.head-img{
+
+.head-img {
   width: 100%;
   height: 460rpx;
 }
-.head{
+
+.head {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 20rpx;
   margin-left: 30rpx;
 }
-.head image{
+
+.head image {
   width: 64rpx;
   height: 64rpx;
 }
-.author{
+
+.author {
   font-size: 30rpx;
   font-weight: 300rpx;
   margin-left: 20rpx;
   color: #666;
 }
-.const-text{
+
+.const-text {
   font-size: 24rpx;
   margin-left: 20rpx;
   color: #999;
 }
-.date{
+
+.date {
   font-size: 24rpx;
   margin-left: 30rpx;
   color: #999;
 }
-.title{
+
+.title {
   margin-left: 40rpx;
   font-size: 36rpx;
   font-weight: 700;
@@ -43,34 +50,40 @@
   color: #4b556c;
   /* text-indent: 2em; */
 }
-.tool{
+
+.tool {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 20rpx;
 }
-.share{
+
+.share {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   width: 660rpx;
 }
-.share image{
+
+.share image {
   width: 90rpx;
   height: 90rpx;
   margin-right: 20rpx;
 }
-.line{
+
+.line {
   width: 660rpx;
   height: 1px;
   background-color: #e5e5e5;
   position: absolute;
   z-index: -99;
 }
-.article{
+
+.article {
   color: #666;
-  margin: 20rpx 30rpx;
+  margin: 20rpx 30rpx 30px;
   line-height: 44rpx;
   letter-spacing: 2rpx;
+  text-indent: 1.5rem;
 }

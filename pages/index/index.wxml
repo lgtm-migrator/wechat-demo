@@ -1,7 +1,7 @@
 <!--pages/index/index.wxml-->
 <view>
   <!-- 轮播图展示 -->
-  <swiper indicator-dots autoplay circular>
+  <swiper indicator-dots indicator-active-color="#ffffff" indicator-color="#bbbbbb" autoplay circular>
     <swiper-item>
       <image src="/images/page1/carou1.jpg"></image>
     </swiper-item>
@@ -16,21 +16,22 @@
     </swiper-item>
   </swiper>
   <!-- 文章展示 -->
-  <block wx:for="{{postList}}" wx:key="postId">
-    <view data-post-id="{{item.postId}}" bind:tap="onJumpToArticle" class="post-container">
-      <view class="post-head">
-        <image src="{{item.imghead}}"></image>
-        <text>{{item.date}}</text>
+  <view class="post-wrapper">
+    <view wx:for="{{postList}}" wx:key="postId" class="post" hover-class="hover" data-post-id="{{item.postId}}" bind:tap="onJumpToArticle">
+      <image class="img" src="{{item.imgContent}}" mode="aspectFill"></image>
+      <view class="title">{{item.title}}</view>
+      <view class="info">
+        <text>作者: </text>
+        <image class="avator" src="{{item.imghead}}" mode="widthFix" />
+        <text>日期: {{item.date}}</text>
       </view>
-      <text class="post-title">{{item.title}}</text>
-      <image class="post-img" src="{{item.imgContent}}"></image>
-      <text class="post-content">{{item.content}}</text>
-      <view class="post-like">
+      <view class="content">{{item.content}}</view>
+      <view class="like">
         <l-icon name="favor" />
         <text>{{item.chat}}</text>
         <l-icon name="eye" />
         <text>{{item.view}}</text>
       </view>
     </view>
-  </block>
+  </view>
 </view>

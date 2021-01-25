@@ -1,29 +1,29 @@
 /* pages/welcome/welcome.wxss */
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #b3d4db;
 }
 
-.l-avater{
+.l-avater {
   margin-top: 160rpx;
 }
 
-.avatar{
+.avatar {
   width: 200rpx;
   height: 200rpx;
   margin-top: 160rpx;
 }
 
-.motto{
+.motto {
   margin-top: 100rpx;
   font-size: 32rpx;
   font-weight: bold;
 }
 
-.journey-container{
+.journey-container {
   margin-top: 200rpx;
   border: 1px solid #405f80;
   width: 200rpx;
@@ -32,13 +32,17 @@
   text-align: center;
 }
 
-.journey{
+.journey {
   font-size: 22rpx;
   color: #405f80;
   line-height: 80rpx;
   font-weight: bold;
 }
 
-page{
+page {
   background-color: #b3d4db;
+}
+
+.hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }

@@ -7,7 +7,7 @@
     <text class="const-text">发表于</text>
     <text class="date">{{postData.dateTime}}</text>
   </view>
-  <text class="title">{{postData.title}}</text>
+  <view class="title">{{postData.title}}</view>
   <view class="tool">
     <view class="share">
       <image src="/images/page1/collect.png"></image>
@@ -15,5 +15,7 @@
     </view>
     <view class="line"></view>
   </view>
-  <text class="article">{{postData.article}}</text>
+  <view class="article">
+    <view wx:for="{{paragraphs}}" class="paragraph" wx:key>{{item}}</view>
+  </view>
 </view>

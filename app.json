@@ -10,5 +10,5 @@
   "usingComponents": {
     "l-icon": "/miniprogram_npm/lin-ui/icon/index"
   },
-  "sitemapLocation": "sitemap75.json"
+  "sitemapLocation": "sitemap.json"
 }
